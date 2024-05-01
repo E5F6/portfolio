@@ -42,7 +42,11 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex justify-center items-center gap-5 text-white">
           {menuItems.map((menuItems, index) => (
-            <Link href={menuItems.url} className="hover:bg-cyan-600 cursor-pointer px-4 py-2 font-medium rounded-md transition ease-in" key={index}>
+            <Link
+              href={menuItems.url}
+              className="hover:bg-cyan-600 cursor-pointer px-4 py-2 font-medium rounded-md transition ease-in"
+              key={index}
+            >
               {menuItems.name}
             </Link>
           ))}
@@ -111,7 +115,7 @@ const Navbar = () => {
         <div className="flex lg:hidden flex-col justify-center items-center gap-5 mt-3 mb-3 self-start">
           {menuItems.map((menuItems, index) => (
             <Link
-            href={menuItems.url}
+              href={menuItems.url}
               key={index}
               className="text-white hover:bg-cyan-600 w-full cursor-pointer px-4 py-2 font-medium rounded-md self-start transition ease-in"
             >

@@ -52,8 +52,8 @@ const WhatIKnow = () => {
 
   const backends = [
     {
-        name : "NodeJS",
-        icon : <FaNodeJs />
+      name: "NodeJS",
+      icon: <FaNodeJs />,
     },
   ];
 
@@ -120,102 +120,116 @@ const WhatIKnow = () => {
           What I Know
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-start items-stretch gap-5">
-            {/* Frontend */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Frontend</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {frontends.map((frontend, index) => (
+          {/* Frontend */}
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Frontend
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {frontends.map((frontend, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {frontend.icon} {frontend.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
           {/* Framework */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Frameworks</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {frameworks.map((framework, index) => (
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Frameworks
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {frameworks.map((framework, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {framework.icon} {framework.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
-                      {/* Backend */}
-                      <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Backend</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {backends.map((backend, index) => (
+          {/* Backend */}
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Backend
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {backends.map((backend, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {backend.icon} {backend.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
           {/* Database */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Database</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {databases.map((database, index) => (
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Database
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {databases.map((database, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {database.icon} {database.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
           {/* Version Control */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Version Control</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {versionControls.map((versionControl, index) => (
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Version Control
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {versionControls.map((versionControl, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {versionControl.icon} {versionControl.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
           {/* Operating System */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Operating System</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {operatingSystems.map((operatingSystem, index) => (
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Operating System
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {operatingSystems.map((operatingSystem, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {operatingSystem.icon} {operatingSystem.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
           {/* Languages */}
-          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] card">
-            <h1 className="text-2xl font-medium self-start text-slate-200">Languages</h1>
-            <div className="flex flex-wrap justify-center items-center gap-2">
-            {languages.map((language, index) => (
+          <div className="flex flex-col justify-start items-center gap-3 rounded-md p-5 max-w-[400px] border-b-2 border-cyan-600 card">
+            <h1 className="text-2xl font-medium self-start text-slate-200">
+              Languages
+            </h1>
+            <div className="flex flex-wrap justify-start items-center gap-2 self-start">
+              {languages.map((language, index) => (
                 <p
                   className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {language.icon} {language.name}
                 </p>
-            ))}
+              ))}
             </div>
           </div>
         </div>

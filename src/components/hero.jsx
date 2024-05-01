@@ -6,15 +6,15 @@ const Hero = () => {
   const links = [
     {
       icon: <FaGithub />,
-      url: "",
+      url: "https://github.com/priyannxhuu",
     },
     {
       icon: <FaLinkedinIn />,
-      url: "",
+      url: "https://www.linkedin.com/in/priyannxhuu",
     },
     {
       icon: <FaXTwitter />,
-      url: "",
+      url: "https://twitter.com/priyannxhuu",
     },
   ];
 
@@ -52,7 +52,11 @@ const Hero = () => {
           </div>
           <div className="flex justify-center items-center gap-5 px-7 py-3 rounded-full mt-3 links">
             {links.map((link, index) => (
-              <Link href={link.url} key={index} className="text-2xl md:text-4xl text-slate-300 hover:text-cyan-600 hover:translate-y-1 transition ease-out">
+              <Link
+                href={link.url}
+                key={index}
+                className="text-2xl md:text-4xl text-slate-300 hover:text-cyan-600 hover:translate-y-1 transition ease-out"
+              >
                 {link.icon}
               </Link>
             ))}
