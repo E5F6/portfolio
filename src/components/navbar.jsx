@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
 import { Kalam } from "next/font/google";
 
 const kalam = Kalam({ weight: "400", subsets: ["latin"] });
@@ -13,103 +13,111 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const menuItems = [
+    {
+      name: "Home",
+      url: "",
+    },
+    {
+      name: "Services",
+      url: "",
+    },
+    {
+      name: "Projects",
+      url: "",
+    },
+    {
+      name: "About",
+      url: "",
+    },
+  ];
+
   return (
-    <nav className="navbar w-full px-5 py-3">
-      <div className="flex items-center justify-between">
+    <nav className="w-full px-5 py-3 navbar flex flex-col justify-center items-center">
+      <div className="flex items-center justify-between w-full lg:w-[80vw]">
+        {/* Logo */}
         <div className="flex items-center text-white text-3xl font-bold px-3">
           <h1 className={kalam.className}>Priyanshu</h1>
         </div>
-        <div className="hidden lg:flex items-center justify-center gap-7 text-white font-semibold">
-          <Link href="#">
-            <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Home
-            </p>
-          </Link>
-          <Link href="#">
-            <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Projects
-            </p>
-          </Link>
-          <Link href="#">
-            <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Services
-            </p>
-          </Link>
-          <Link href="#">
-            <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Contact
-            </p>
-          </Link>
-          {/* GitHub button with GitHub icon */}
-          <a
-            href="https://github.com/yourgithub"
-            className="text-black bg-white hover:bg-cyan-700 hover:text-white px-3 py-2 rounded-lg text-base font-medium flex items-center gap-2"
-          >
-            <FaGithub className="text-2xl" /> {/* Use FaGithub icon */}
-            GitHub
-          </a>
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex justify-center items-center gap-5 text-white">
+          {menuItems.map((menuItems, index) => (
+            <Link href={menuItems.url} className="hover:bg-cyan-600 cursor-pointer px-4 py-2 font-medium rounded-md transition ease-in" key={index}>
+              {menuItems.name}
+            </Link>
+          ))}
         </div>
         {/* Menu Icons */}
         <div className="flex lg:hidden">
           <button
+            className="inline-flex items-center justify-center rounded-md text-white focus:outline-none"
             onClick={toggleNavbar}
             type="button"
-            className="inline-flex items-center justify-center rounded-md text-white hover:text-white focus:outline-none"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
           >
-            <span className="sr-only">Open main menu</span>
-            {!isOpen ? (
-              <img
-                src="/menuicon.png"
-                alt="Menu"
-                className="block h-6 w-6" 
-              />
+            {isOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width={36}
+                height={36}
+                color={"#ffffff"}
+                fill={"none"}
+              >
+                <path
+                  d="M19.0005 4.99988L5.00045 18.9999M5.00045 4.99988L19.0005 18.9999"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             ) : (
-              <img
-                src="/closeicon.png"
-                alt="Close"
-                className="block h-6 w-6"
-              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width={36}
+                height={36}
+                color={"#ffffff"}
+                fill={"none"}
+              >
+                <path
+                  d="M10 5L20 5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 19L14 19"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             )}
           </button>
         </div>
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden" id="mobile-menu">
-          <div className="px-3 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="#">
-              <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Home
-              </p>
+        <div className="flex lg:hidden flex-col justify-center items-center gap-5 mt-3 mb-3 self-start">
+          {menuItems.map((menuItems, index) => (
+            <Link
+            href={menuItems.url}
+              key={index}
+              className="text-white hover:bg-cyan-600 w-full cursor-pointer px-4 py-2 font-medium rounded-md self-start transition ease-in"
+            >
+              {menuItems.name}
             </Link>
-            <Link href="#">
-              <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Projects
-              </p>
-            </Link>
-            <Link href="#">
-              <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Services
-              </p>
-            </Link>
-            <Link href="#">
-              <p className="text-gray-300 hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                Contact
-              </p>
-            </Link>
-            {/* GitHub button with GitHub icon */}
-            <div className="flex justify-between items-center w-full">
-              <a
-                href="https://github.com/yourgithub"
-                className="text-black bg-white hover:bg-cyan-700 hover:text-white px-3 py-2 rounded-lg text-base font-medium flex items-center gap-2"
-              >
-                <FaGithub className="text-2xl" /> {/* Use FaGithub icon */}
-                GitHub
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       )}
     </nav>
