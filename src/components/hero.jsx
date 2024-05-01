@@ -32,8 +32,8 @@ const Hero = () => {
             FullStack Developer
           </h2>
           <p className="max-w-[500px] lg:max-w-[750px] text-xl lg:text-3xl text-slate-400 self-start font-medium">
-            I&apos;m a passionate full-stack developer with expertise in
-            building modern, scalable, and user-friendly web applications.
+            I'm a passionate full-stack developer with expertise in building
+            modern, scalable, and user-friendly web applications.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-7">
             <a
