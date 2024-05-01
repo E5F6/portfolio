@@ -35,7 +35,7 @@ const Contact = () => {
         </h1>
         <div className="flex flex-wrap justify-center items-center gap-7 rounded-full px-7 py-3 links">
         {contacts.map((contact , index) => (
-            <Link href={contact.url} className="text-slate-300 text-4xl hover:text-cyan-600 hover:translate-y-1 transition ease-in-out">
+            <Link key={index} href={contact.url} className="text-slate-300 text-4xl hover:text-cyan-600 hover:translate-y-1 transition ease-in-out">
             {contact.icon}
             </Link>
         ))}
