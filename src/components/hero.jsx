@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="grid grid-cols-1 gap-5 justify-around items-center">
         <div className="flex flex-col col-span-1 justify-start items-center gap-4">
           <p className="text-2xl md:text-4xl font-medium text-cyan-600 self-start">
-            Hi There I'm
+            Hi There I&apos;m
           </p>
           <h1 className="font-semibold text-5xl md:text-7xl text-slate-200 self-start">
             Priyanshu Chahar
@@ -32,8 +32,8 @@ const Hero = () => {
             FullStack Developer
           </h2>
           <p className="max-w-[500px] lg:max-w-[750px] text-xl lg:text-3xl text-slate-400 self-start font-medium">
-            I'm a passionate full-stack developer with expertise in building
-            modern, scalable, and user-friendly web applications.
+            I&apos;m a passionate full-stack developer with expertise in
+            building modern, scalable, and user-friendly web applications.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-4 lg:gap-7">
             <a
