@@ -114,7 +114,7 @@ const WhatIKnow = () => {
   ];
 
   return (
-    <section className="px-10 mb-10 flex justify-center items-center w-full">
+    <section className="px-10 mb-10 flex justify-center items-center w-full" id="skills">
       <div className="flex flex-col justify-center items-center gap-7 w-full lg:w-[80vw]">
         <h1 className="text-3xl md:text-4xl text-slate-200 font-medium self-start">
           What I Know
@@ -128,7 +128,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {frontends.map((frontend, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {frontend.icon} {frontend.name}
@@ -144,7 +144,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {frameworks.map((framework, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {framework.icon} {framework.name}
@@ -160,7 +160,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {backends.map((backend, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {backend.icon} {backend.name}
@@ -176,7 +176,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {databases.map((database, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {database.icon} {database.name}
@@ -192,7 +192,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {versionControls.map((versionControl, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {versionControl.icon} {versionControl.name}
@@ -208,7 +208,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {operatingSystems.map((operatingSystem, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {operatingSystem.icon} {operatingSystem.name}
@@ -224,7 +224,7 @@ const WhatIKnow = () => {
             <div className="flex flex-wrap justify-start items-center gap-2 self-start">
               {languages.map((language, index) => (
                 <p
-                  className="px-5 py-2 flex gap-1 text-xl text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
+                  className="px-5 py-2 flex gap-1 text-slate-300 border-2 border-cyan-600 rounded-md items-center hover:bg-cyan-600 transition ease-in-out cursor-pointer"
                   key={index}
                 >
                   {language.icon} {language.name}

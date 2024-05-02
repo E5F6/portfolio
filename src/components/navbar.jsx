@@ -16,19 +16,19 @@ const Navbar = () => {
   const menuItems = [
     {
       name: "Home",
-      url: "",
+      url: "#",
     },
     {
       name: "Services",
-      url: "",
+      url: "#services",
     },
     {
       name: "Projects",
-      url: "",
+      url: "#projects",
     },
     {
       name: "About",
-      url: "",
+      url: "#about",
     },
   ];
 
@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav className="w-full px-5 py-3 navbar flex flex-col justify-center items-center">
       <div className="flex items-center justify-between w-full lg:w-[80vw]">
         {/* Logo */}
-        <div className="flex items-center text-white text-3xl font-bold px-3">
+        <div className="flex items-center text-white text-3xl font-bold px-3 cursor-pointer">
           <h1 className={kalam.className}>Priyanshu</h1>
         </div>
         {/* Desktop Menu */}
@@ -112,7 +112,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="flex lg:hidden flex-col justify-center items-center gap-5 mt-3 mb-3 self-start">
+        <div className="flex lg:hidden flex-col justify-center items-center gap-5 mt-3 mb-3 self-start w-full">
           {menuItems.map((menuItems, index) => (
             <Link
               href={menuItems.url}

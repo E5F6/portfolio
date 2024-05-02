@@ -30,7 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="px-10 mb-10 flex justify-center items-center w-full">
+    <section className="px-10 mb-10 flex justify-center items-center w-full" id="projects">
       <div className="flex flex-col justify-center items-center gap-7 w-full lg:w-[80vw]">
         <h1 className="text-3xl md:text-4xl text-slate-200 font-medium self-start">
           Projects
@@ -44,7 +44,7 @@ const Projects = () => {
               <h1 className="text-3xl text-slate-200 font-semibold self-start">
                 {project.name}
               </h1>
-              <h2 className="text-xl text-slate-300 font-medium">
+              <h2 className="text-slate-300 font-medium">
                 {project.description}
               </h2>
               <h3 className="text-xl text-slate-200 font-medium self-start">

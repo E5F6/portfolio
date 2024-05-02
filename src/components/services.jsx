@@ -31,7 +31,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="px-10 mb-10 flex justify-center items-center w-full">
+    <section className="px-10 mb-10 flex justify-center items-center w-full" id="services">
       <div className="flex flex-col justify-center items-center gap-7 w-full lg:w-[80vw]">
         <h1 className="text-3xl md:text-4xl text-slate-200 font-medium self-start">
           Services
@@ -45,12 +45,12 @@ const Services = () => {
               <h1 className="text-3xl text-slate-200 font-semibold self-start">
                 {service.name}
               </h1>
-              <h2 className="text-xl text-slate-300 font-medium">
+              <h2 className="text-slate-300 font-medium">
                 {service.description}
               </h2>
               <div className="flex flex-wrap justify-start items-center gap-3 self-start">
                 <a
-                  href=""
+                  href="#message"
                   className="px-4 py-2 text-slate-200 border-2 border-cyan-600 bg-transparent hover:bg-cyan-600 rounded-full font-medium text-xl transition ease-in"
                 >
                   Hire Me

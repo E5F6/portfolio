@@ -5,3 +5,6 @@ body{
 .navbar , .links , .card , .footer{
     background: #171b22;
 }
+.input{
+    background: #0d1117;
+}
