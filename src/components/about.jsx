@@ -28,7 +28,7 @@ const About = () => {
               problems and turning ideas into reality through code.
             </p>
           </div>
-          <div className="col-span-1 flex justify-center items-center">
+          <div className="col-span-1 hidden md:flex justify-center items-center">
             <img src="" alt="Portfolio" />
           </div>
         </div>
