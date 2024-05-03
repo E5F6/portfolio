@@ -5,6 +5,10 @@ body{
 .navbar , .links , .card , .footer{
     background: #171b22;
 }
+.skill{
+    background: #0d1117;
+}
+
 .input{
     background: #0d1117;
 }

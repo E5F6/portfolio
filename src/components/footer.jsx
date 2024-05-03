@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-10 py-3 flex justify-center items-center footer">
-      <h1 className="text-xl font-medium text-slate-300">
+      <h1 className="font-medium text-slate-300">
         {name} @{year}
       </h1>
     </footer>

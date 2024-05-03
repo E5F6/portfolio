@@ -5,7 +5,7 @@ const About = () => {
       id="about"
     >
       <div className="flex flex-col justify-center items-center gap-7 w-full lg:w-[80vw]">
-        <h1 className="text-3xl md:text-4xl text-slate-200 font-medium self-start">
+        <h1 className="text-2xl md:text-3xl text-slate-200 font-medium self-start">
           About Me
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 justify-start items-center gap-3 px-5 py-5 rounded-md w-full card">

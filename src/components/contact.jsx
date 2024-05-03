@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <section className="px-10 mb-10 flex justify-center items-center w-full" id="contact">
       <div className="flex flex-col justify-center items-center gap-7 w-full lg:w-[80vw]">
-        <h1 className="text-3xl md:text-4xl text-slate-200 font-medium self-start">
+        <h1 className="text-2xl md:text-3xl text-slate-200 font-medium self-start">
           Contact Me
         </h1>
         <div className="flex flex-wrap justify-center items-center gap-7 rounded-full px-7 py-3 links">
