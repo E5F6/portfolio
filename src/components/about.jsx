@@ -29,7 +29,7 @@ const About = () => {
             </p>
           </div>
           <div className="col-span-1 hidden md:flex justify-center items-center">
-            <img src="" alt="Portfolio" />
+            <img src="/laptop.png" alt="Portfolio" />
           </div>
         </div>
       </div>
