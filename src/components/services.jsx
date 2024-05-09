@@ -48,14 +48,6 @@ const Services = () => {
               <h2 className="text-slate-300 font-medium mt-0 mb-auto">
                 {service.description}
               </h2>
-              <div className="flex flex-wrap justify-start items-center gap-3 self-start mb-0">
-                <a
-                  href="#message"
-                  className="px-4 py-2 text-slate-200 border-2 border-cyan-600 bg-transparent hover:bg-cyan-600 rounded-full font-medium transition ease-in"
-                >
-                  Hire Me
-                </a>
-              </div>
             </div>
           ))}
         </div>

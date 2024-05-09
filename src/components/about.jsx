@@ -8,8 +8,8 @@ const About = () => {
         <h1 className="text-2xl md:text-3xl text-slate-200 font-medium self-start">
           About Me
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 justify-start items-center gap-3 px-5 py-5 rounded-md w-full card">
-          <div className="col-span-2 flex flex-col justify-start items-center gap-3">
+        <div className="flex justify-start items-center gap-3 px-5 py-5 rounded-md w-full card">
+          <div className="col-span-1 flex flex-col justify-start items-center gap-3">
             <p className="text-slate-300 font-medium">
               My name is Priyanshu Chahar and I&apos;m a computer science student
               with a passion for programming. I&apos;m deeply interested in web
@@ -27,9 +27,6 @@ const About = () => {
               like coding personal projects. I find joy in solving complex
               problems and turning ideas into reality through code.
             </p>
-          </div>
-          <div className="col-span-1 hidden md:flex justify-center items-center">
-            <img src="/laptop.png" alt="Portfolio" />
           </div>
         </div>
       </div>
